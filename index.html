@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>&lt;model-viewer&gt; template</title>
+    <meta charset="utf-8">
+    <meta name="description" content="&lt;model-viewer&gt; template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="./styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <!-- <model-viewer> HTML element -->
+    <model-viewer src="DPro Assignment 2 Hero V2.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.png" shadow-intensity="2" camera-orbit="42.48deg 75.78deg 0.9739m" field-of-view="19.23deg" shadow-softness="1" exposure="1" auto-rotate>
+      <button class="Hotspot" slot="hotspot-1" data-position="0.08349217600885636m 0.10223034271256698m -0.39683163452148557m" data-normal="0m -2.220446049250313e-16m 1m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Record</div>
+      </button><button class="Hotspot" slot="hotspot-2" data-position="-0.0052360528688139285m 0.10321206318988532m -0.39683163452148557m" data-normal="0m -2.220446049250313e-16m 1m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Power: 3-4 hours</div>
+      </button><button class="Hotspot" slot="hotspot-3" data-position="0.036450350114988234m 0.10187920132263087m -0.39683163452148545m" data-normal="0m -2.220446049250313e-16m 1m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Show/Hide</div>
+      </button><button class="Hotspot" slot="hotspot-4" data-position="0.1224354090103508m 0.10104971829689322m -0.39683163452148545m" data-normal="0m -2.220446049250313e-16m 1m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Bluetooth</div>
+      </button><button class="Hotspot" slot="hotspot-5" data-position="0.16356825995991112m 0.09919783598353119m -0.39683163452148557m" data-normal="0m -2.220446049250313e-16m 1m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Battery</div>
+      </button><button class="Hotspot" slot="hotspot-6" data-position="0.13833666287942012m 0.07881405703971353m -0.4516962695383019m" data-normal="0m 0.887918235288317m -0.4600013124356073m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Poles for Support</div>
+      </button><button class="Hotspot" slot="hotspot-9" data-position="0.048250396962335435m 0.01162847725448096m -0.49098638042420767m" data-normal="0.950920031924456m 0.30943673486642104m 6.870875754270612e-17m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Charger</div>
+      </button><button class="Hotspot" slot="hotspot-10" data-position="0.349817096858853m 0.043177353539176594m -0.48787838699643693m" data-normal="-0.3881387985310134m 2.0463651426764142e-16m -0.9216009294021471m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Strap Handles</div>
+      </button><button class="Hotspot" slot="hotspot-11" data-position="-0.12424230090229987m 0.0373614312623855m -0.3786191295255875m" data-normal="0m 0.6866235329637165m 0.7270131525498176m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Move Screen</div>
+      </button><button class="Hotspot" slot="hotspot-12" data-position="0.07400520849501846m 0.029034185887551626m -0.35022517717047996m" data-normal="0m 0.9829417273395763m 0.18391726578733794m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Touch Screen</div>
+      </button><button class="Hotspot" slot="hotspot-13" data-position="0.2715266306280355m 0.029667781713662675m -0.35450411753635847m" data-normal="0.0007247731065833954m 0.9956715100228856m 0.09293932877254486m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Freeze Screen</div>
+      </button>
+      <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+      </div>
+      <button slot="ar-button" id="ar-button">
+          View in your space
+      </button>
+      <div id="ar-prompt">
+          <img src="ar_hand_prompt.png">
+      </div>
+    </model-viewer>  
+    <script src="script.js"></script>
+    <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+  </body>
+</html>
