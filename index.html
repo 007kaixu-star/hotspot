@@ -10,28 +10,40 @@
   <body>
     <!-- <model-viewer> HTML element -->
     <model-viewer src="DPro Assignment 2 Hero V2.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.png" shadow-intensity="2" camera-orbit="42.48deg 75.78deg 0.9739m" field-of-view="19.23deg" shadow-softness="1" exposure="1" auto-rotate>
-      <button class="Hotspot" slot="hotspot-1" data-position="0.08349217600885636m 0.10223034271256698m -0.39683163452148557m" data-normal="0m -2.220446049250313e-16m 1m" data-visibility-attribute="visible">
-          <div class="HotspotAnnotation">Record</div>
-      </button><button class="Hotspot" slot="hotspot-2" data-position="-0.0052360528688139285m 0.10321206318988532m -0.39683163452148557m" data-normal="0m -2.220446049250313e-16m 1m" data-visibility-attribute="visible">
-          <div class="HotspotAnnotation">Power: 3-4 hours</div>
-      </button><button class="Hotspot" slot="hotspot-3" data-position="0.036450350114988234m 0.10187920132263087m -0.39683163452148545m" data-normal="0m -2.220446049250313e-16m 1m" data-visibility-attribute="visible">
-          <div class="HotspotAnnotation">Show/Hide</div>
-      </button><button class="Hotspot" slot="hotspot-4" data-position="0.1224354090103508m 0.10104971829689322m -0.39683163452148545m" data-normal="0m -2.220446049250313e-16m 1m" data-visibility-attribute="visible">
-          <div class="HotspotAnnotation">Bluetooth</div>
-      </button><button class="Hotspot" slot="hotspot-5" data-position="0.16356825995991112m 0.09919783598353119m -0.39683163452148557m" data-normal="0m -2.220446049250313e-16m 1m" data-visibility-attribute="visible">
-          <div class="HotspotAnnotation">Battery</div>
-      </button><button class="Hotspot" slot="hotspot-6" data-position="0.13833666287942012m 0.07881405703971353m -0.4516962695383019m" data-normal="0m 0.887918235288317m -0.4600013124356073m" data-visibility-attribute="visible">
-          <div class="HotspotAnnotation">Poles for Support</div>
-      </button><button class="Hotspot" slot="hotspot-9" data-position="0.048250396962335435m 0.01162847725448096m -0.49098638042420767m" data-normal="0.950920031924456m 0.30943673486642104m 6.870875754270612e-17m" data-visibility-attribute="visible">
-          <div class="HotspotAnnotation">Charger</div>
-      </button><button class="Hotspot" slot="hotspot-10" data-position="0.349817096858853m 0.043177353539176594m -0.48787838699643693m" data-normal="-0.3881387985310134m 2.0463651426764142e-16m -0.9216009294021471m" data-visibility-attribute="visible">
-          <div class="HotspotAnnotation">Strap Handles</div>
-      </button><button class="Hotspot" slot="hotspot-11" data-position="-0.12424230090229987m 0.0373614312623855m -0.3786191295255875m" data-normal="0m 0.6866235329637165m 0.7270131525498176m" data-visibility-attribute="visible">
-          <div class="HotspotAnnotation">Move Screen</div>
-      </button><button class="Hotspot" slot="hotspot-12" data-position="0.07400520849501846m 0.029034185887551626m -0.35022517717047996m" data-normal="0m 0.9829417273395763m 0.18391726578733794m" data-visibility-attribute="visible">
-          <div class="HotspotAnnotation">Touch Screen</div>
-      </button><button class="Hotspot" slot="hotspot-13" data-position="0.2715266306280355m 0.029667781713662675m -0.35450411753635847m" data-normal="0.0007247731065833954m 0.9956715100228856m 0.09293932877254486m" data-visibility-attribute="visible">
-          <div class="HotspotAnnotation">Freeze Screen</div>
+
+      <button class="Hotspot" slot= "hotspot-1" data-position="0.08349217600885636m 0.10223034271256698m -0.39683163452148557m" data-normal="0m -2.220446049250313e-16m 1m" data-visibility-attribute="visible" onMouseOver="addhotspot1()" onMouseOut="removehotspot1()">
+          <div class="HotspotAnnotation"id="hotspot1" style="visibility:hidden">Record</div>
+
+      </button><button class="Hotspot" slot= "hotspot-2" data-position="-0.0052360528688139285m 0.10321206318988532m -0.39683163452148557m" data-normal="0m -2.220446049250313e-16m 1m" data-visibility-attribute="visible"onMouseOver= "addhotspot2()" onMouseOut="removehotspot2()>
+          <div class="HotspotAnnotation"id="hotspot2" style="visibility:hidden">Power: 3-4 hours</div>
+
+      </button><button class="Hotspot" slot="hotspot-3" data-position="0.036450350114988234m 0.10187920132263087m -0.39683163452148545m" data-normal="0m -2.220446049250313e-16m 1m" data-visibility-attribute="visible"onMouseOver="addhotspot3()" onMouseOut="removehotspot3()>
+          <div class="HotspotAnnotation"id="hotspot3" style="visibility:hidden">Show/Hide</div>
+
+      </button><button class="Hotspot" slot="hotspot-4" data-position="0.1224354090103508m 0.10104971829689322m -0.39683163452148545m" data-normal="0m -2.220446049250313e-16m 1m" data-visibility-attribute="visible"onMouseOver="addhotspot4()" onMouseOut="removehotspot4()>
+          <div class="HotspotAnnotation"id="hotspot4" style="visibility:hidden">Bluetooth</div>
+
+      </button><button class="Hotspot" slot="hotspot-5" data-position="0.16356825995991112m 0.09919783598353119m -0.39683163452148557m" data-normal="0m -2.220446049250313e-16m 1m" data-visibility-attribute="visible"onMouseOver="addhotspot5()" onMouseOut="removehotspot5()>
+          <div class="HotspotAnnotation"id="hotspot5" style="visibility:hidden">Battery</div>
+
+      </button><button class="Hotspot" slot="hotspot-6" data-position="0.13833666287942012m 0.07881405703971353m -0.4516962695383019m" data-normal="0m 0.887918235288317m -0.4600013124356073m" data-visibility-attribute="visible"onMouseOver="addhotspot6()" onMouseOut="removehotspot6()>
+          <div class="HotspotAnnotation"id="hotspot6" style="visibility:hidden">Poles for Support</div>
+
+      </button><button class="Hotspot" slot="hotspot-9" data-position="0.048250396962335435m 0.01162847725448096m -0.49098638042420767m" data-normal="0.950920031924456m 0.30943673486642104m 6.870875754270612e-17m" data-visibility-attribute="visible"onMouseOver="addhotspot9()" onMouseOut="removehotspot9()>
+          <div class="HotspotAnnotation"id="hotspot9" style="visibility:hidden">Charger</div>
+
+      </button><button class="Hotspot" slot="hotspot-10" data-position="0.349817096858853m 0.043177353539176594m -0.48787838699643693m" data-normal="-0.3881387985310134m 2.0463651426764142e-16m -0.9216009294021471m" data-visibility-attribute="visible"onMouseOver="addhotspot10()" onMouseOut="removehotspot10()>
+          <div class="HotspotAnnotation"id="hotspot10" style="visibility:hidden">Strap Handles</div>
+
+      </button><button class="Hotspot" slot="hotspot-11" data-position="-0.12424230090229987m 0.0373614312623855m -0.3786191295255875m" data-normal="0m 0.6866235329637165m 0.7270131525498176m" data-visibility-attribute="visible"onMouseOver="addhotspot11()" onMouseOut="removehotspot11()>
+          <div class="HotspotAnnotation"id="hotspot11" style="visibility:hidden">Move Screen</div>
+
+      </button><button class="Hotspot" slot="hotspot-12" data-position="0.07400520849501846m 0.029034185887551626m -0.35022517717047996m" data-normal="0m 0.9829417273395763m 0.18391726578733794m" data-visibility-attribute="visible"onMouseOver="addhotspot12()" onMouseOut="removehotspot12()>
+          <div class="HotspotAnnotation"id="hotspot12" style="visibility:hidden">Touch Screen</div>
+
+      </button><button class="Hotspot" slot="hotspot-13" data-position="0.2715266306280355m 0.029667781713662675m -0.35450411753635847m" data-normal="0.0007247731065833954m 0.9956715100228856m 0.09293932877254486m" data-visibility-attribute="visible"onMouseOver="addhotspot13()" onMouseOut="removehotspot13()>
+          <div class="HotspotAnnotation"id="hotspot13" style="visibility:hidden">Freeze Screen</div>
+
       </button>
       <div class="progress-bar hide" slot="progress-bar">
           <div class="update-bar"></div>
@@ -43,6 +55,77 @@
           <img src="ar_hand_prompt.png">
       </div>
     </model-viewer>  
+<script>
+
+	function addhotspot1(){
+		document.getElementById("hotspot1").style.visibility="visible"
+	}
+	function removehotspot1(){
+		document.getElementById("hotspot1").style.visibility="hidden";
+	}
+
+	function addhotspot2(){
+		document.getElementById("hotspot2").style.visibility="visible"
+	}
+	function removehotspot2(){
+		document.getElementById("hotspot2").style.visibility="hidden";
+	}
+
+	function addhotspot3(){
+		document.getElementById("hotspot3").style.visibility="visible"
+	}
+	function removehotspot3(){
+		document.getElementById("hotspot3").style.visibility="hidden";
+	}
+	function addhotspot4(){
+		document.getElementById("hotspot4").style.visibility="visible"
+	}
+	function removehotspot4(){
+		document.getElementById("hotspot4").style.visibility="hidden";
+	}
+	function addhotspot5(){
+		document.getElementById("hotspot5").style.visibility="visible"
+	}
+	function removehotspot5(){
+		document.getElementById("hotspot5").style.visibility="hidden";
+	}
+	function addhotspot6(){
+		document.getElementById("hotspot6").style.visibility="visible"
+	}
+	function removehotspot6(){
+		document.getElementById("hotspot6").style.visibility="hidden";
+	}
+	function addhotspot9(){
+		document.getElementById("hotspot9").style.visibility="visible"
+	}
+	function removehotspot9(){
+		document.getElementById("hotspot9").style.visibility="hidden";
+	}
+	function addhotspot10(){
+		document.getElementById("hotspot10").style.visibility="visible"
+	}
+	function removehotspot10(){
+		document.getElementById("hotspot10").style.visibility="hidden";
+	}
+	function addhotspot11(){
+		document.getElementById("hotspot11").style.visibility="visible"
+	}
+	function removehotspot11(){
+		document.getElementById("hotspot11").style.visibility="hidden";
+	}
+	function addhotspot12(){
+		document.getElementById("hotspot12").style.visibility="visible"
+	}
+	function removehotspot12(){
+		document.getElementById("hotspot12").style.visibility="hidden";
+	}	
+	function addhotspot13(){
+		document.getElementById("hotspot13").style.visibility="visible"
+	}
+	function removehotspot13(){
+		document.getElementById("hotspot13").style.visibility="hidden";
+	}
+</script>
     <script src="script.js"></script>
     <!-- Loads <model-viewer> for browsers: -->
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
