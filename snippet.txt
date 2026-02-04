@@ -1,62 +1,18 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <title>&lt;model-viewer&gt; template</title>
-    <meta charset="utf-8">
-    <meta name="description" content="&lt;model-viewer&gt; template">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link type="text/css" href="./styles.css" rel="stylesheet"/>
-  </head>
-  <body>
-    <!-- <model-viewer> HTML element -->
-    <model-viewer src="DPro Assignment 2 Hero V2.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="2" auto-rotate exposure="1.09" shadow-softness="1" camera-orbit="68.85deg 73.82deg 1.132m" field-of-view="24.02deg">
-      
-<button class="Hotspot" slot="hotspot-1" data-position="0.07621180025654951m 0.1025663011986045m -0.3968316345214856m" data-normal="0m -2.2204460492503116e-16m 1m" data-visibility-attribute="visible"onMouseOver= "addhotspot1()" onMouseOut="removehotspot1()>
-          <div class="HotspotAnnotation"id="hotspot1" style="visibility:hidden">Record</div>
-      </button>
-
-<button class="Hotspot" slot="hotspot-2" data-position="0.0838692732907711m 0.031146683363385805m -0.3687698909624592m" data-normal="-1.387778780781446e-17m 0.9479222324347255m 0.3185018700980679m" data-visibility-attribute="visible"onMouseOver= "addhotspot2()" onMouseOut="removehotspot2()>
-          <div class="HotspotAnnotation"id="hotspot2" style="visibility:hidden">Foot Buttons</div>
-      </button>
-
-<button class="Hotspot" slot="hotspot-3" data-position="-0.02330669554065666m 0.08416751617522164m -0.4759440933908158m" data-normal="0m 0.9610626087176106m -0.2763307115123128m" data-visibility-attribute="visible"onMouseOver= "addhotspot3()" onMouseOut="removehotspot3()>
-          <div class="HotspotAnnotation"id="hotspot3" style="visibility:hidden">Poles</div>
-      </button>
-
-      <div class="progress-bar hide" slot="progress-bar">
-          <div class="update-bar"></div>
-      </div>
-      <button slot="ar-button" id="ar-button">
-          View in your space
-      </button>
-
-      <div id="ar-prompt">
-          <img src="ar_hand_prompt.png">
-      </div>
-
-    </model-viewer>  
-function addhotspot1(){
-		document.getElementById("hotspot1").style.visibility="visible"
-	}
-	function removehotspot1(){
-		document.getElementById("hotspot1").style.visibility="hidden";
-	}
-
-	function addhotspot2(){
-		document.getElementById("hotspot2").style.visibility="visible"
-	}
-	function removehotspot2(){
-		document.getElementById("hotspot2").style.visibility="hidden";
-	}
-
-	function addhotspot3(){
-		document.getElementById("hotspot3").style.visibility="visible"
-	}
-	function removehotspot3(){
-		document.getElementById("hotspot3").style.visibility="hidden";
-	}
-    <script src="script.js"></script>
-    <!-- Loads <model-viewer> for browsers: -->
-    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
-  </body>
-</html>
+<model-viewer src="DPro Assignment 2 Hero V2.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.png" shadow-intensity="2" auto-rotate exposure="1.09" shadow-softness="1" camera-orbit="68.85deg 73.82deg 1.132m" field-of-view="24.02deg">
+    <button class="Hotspot" slot="hotspot-2" data-position="0.07621180025654951m 0.1025663011986045m -0.3968316345214856m" data-normal="0m -2.2204460492503116e-16m 1m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Record</div>
+    </button><button class="Hotspot" slot="hotspot-3" data-position="0.0838692732907711m 0.031146683363385805m -0.3687698909624592m" data-normal="-1.387778780781446e-17m 0.9479222324347255m 0.3185018700980679m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Foot Buttons</div>
+    </button><button class="Hotspot" slot="hotspot-4" data-position="-0.02330669554065666m 0.08416751617522164m -0.4759440933908158m" data-normal="0m 0.9610626087176106m -0.2763307115123128m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Poles</div>
+    </button>
+    <div class="progress-bar hide" slot="progress-bar">
+        <div class="update-bar"></div>
+    </div>
+    <button slot="ar-button" id="ar-button">
+        View in your space
+    </button>
+    <div id="ar-prompt">
+        <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+    </div>
+</model-viewer>
